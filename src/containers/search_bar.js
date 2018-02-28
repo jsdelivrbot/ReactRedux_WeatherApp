@@ -20,7 +20,6 @@ class SearchBar extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
-
     // Fetch whether data
     this.props.fetchWeather(this.state.term);
     this.setState({term: ''}); // this.setState causes the component to re-render.
